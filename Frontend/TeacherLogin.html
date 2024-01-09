@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeBIX</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="img2.png" alt="codebix" />
+      <div class="form-box">
+        <h1 id="title">Sign Up</h1>
+        <form action="">
+          <div class="btn-field">
+            <button type="button" id="signupBtn">sign up</button>
+            <button type="button" id="signinBtn" class="disable">log in</button>
+          </div>
+          <div class="input-group">
+            <div class="input-field" id="nameField">
+              <i class="fa-solid fa-user"></i>
+              <input id="username" type="text" placeholder="Teacher name" />
+            </div>
+
+            <div class="input-field">
+              <i class="fa-regular fa-id-card"></i>
+              <input id="rollno" type="number" placeholder="Roll No" />
+            </div>
+
+            <div class="input-field">
+              <i class="fa-solid fa-lock"></i>
+              <input id="password" type="password" placeholder="Password" />
+            </div>
+            <!-- <p>Forgot Password?<a href="">Click Here</a></p> -->
+          </div>
+          <div class="subbtn-field">
+            <button type="button" id="submit" onclick="Signup()">submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="TeacherLogin.js">
+      // let signupBtn = document.getElementById("signupBtn");
+      // let signinBtn = document.getElementById("signinBtn");
+      // let nameField = document.getElementById("nameField");
+      // let title = document.getElementById("title");
+
+      // signinBtn.onclick = function () {
+      //   nameField.style.maxHeight = "0";
+      //   title.innerHTML = "Log In";
+      //   signupBtn.classList.add("disable");
+      //   signinBtn.classList.remove("disable");
+      // };
+
+      // signupBtn.onclick = function () {
+      //   nameField.style.maxHeight = "65px";
+      //   title.innerHTML = "Sign Up";
+      //   signupBtn.classList.remove("disable");
+      //   signinBtn.classList.add("disable");
+      // };
+    </script>
+  </body>
+</html>

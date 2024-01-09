@@ -1,0 +1,28 @@
+body {
+  background-color: #313336;
+  color: whitesmoke;
+}
+
+h1 {
+  justify-content: center;
+}
+
+.home {
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
+.st {
+  position: relative;
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  font-size: x-large;
+  color: aliceblue;
+}

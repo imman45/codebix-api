@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeBIX</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="addQuiz.css" />
+  </head>
+  <body>
+    <header>
+      <h2 id="logo">
+        <img class="imgl" src="img2.png" />
+        <a href="welcome.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+      </h2>
+    </header>
+    <div class="form-box">
+      <h1 id="title">Add Quiz</h1>
+      <form action="">
+        <div class="input-group">
+          <div class="input-field" id="nameField">
+            <i class="fa-regular fa-circle-question"></i>
+            <input id="Quiztitle" type="text" placeholder="Quiz Title" />
+          </div>
+
+          <div class="input-field">
+            <i class="fa-solid fa-circle-chevron-down"></i>
+            <select id="category">
+              <option id="dis" disabled selected>Select-Category</option>
+              <option value="Python">Python</option>
+              <option value="Java">Java</option>
+              <option value="Javascript">Javascript</option>
+            </select>
+          </div>
+
+          <div class="input-field">
+            <i class="fa-solid fa-list-ul"></i>
+            <input id="numQ" type="number" placeholder="Number of Questions" />
+          </div>
+
+          <div class="subbtn-field">
+            <button type="button" id="submit" onclick="addQuiz()">
+              SUBMIT
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="addQuiz.js"></script>
+  </body>
+</html>

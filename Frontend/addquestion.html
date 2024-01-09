@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeBIX</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="addquestion.css" />
+  </head>
+  <body>
+    <header>
+      <h2 id="logo">
+        <img class="imgl" src="img2.png" />
+        <button type="button" id="daily">
+          <a href="addQuiz.html">Update daily Quiz</a>
+        </button>
+        <a href="welcome.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+      </h2>
+    </header>
+    <div class="form-box">
+      <h1 id="title">Add Questions</h1>
+      <form action="">
+        <div class="input-group">
+          <div class="input-field" id="nameField">
+            <i class="fa-regular fa-circle-question"></i>
+            <input id="question" type="text" placeholder="Question?" />
+          </div>
+
+          <div class="input-field">
+            <i class="fa-solid fa-circle-chevron-down"></i>
+            <select id="category">
+              <option id="dis" disabled selected>Select-Category</option>
+              <option value="Python">Python</option>
+              <option value="Java">Java</option>
+              <option value="Javascript">Javascript</option>
+            </select>
+          </div>
+
+          <div class="input-field">
+            <i class="fa-solid fa-list-ul"></i>
+            <input id="optA" type="text" placeholder="Option A" />
+          </div>
+          <div class="input-field">
+            <i class="fa-solid fa-list-ul"></i>
+            <input id="optB" type="text" placeholder="Option B" />
+          </div>
+          <div class="input-field">
+            <i class="fa-solid fa-list-ul"></i>
+            <input id="optC" type="text" placeholder="Option C" />
+          </div>
+          <div class="input-field">
+            <i class="fa-solid fa-list-ul"></i>
+            <input id="optD" type="text" placeholder="Option D" />
+          </div>
+
+          <div class="input-field">
+            <i class="fa-solid fa-circle-chevron-down"></i>
+            <!-- <input id="crtAns" type="text" placeholder="Correct Answer" /> -->
+            <select id="crtAns">
+              <option id="dis" disabled selected>Select-Correct Option</option>
+              <option value="optA">Option A</option>
+              <option value="optB">Option B</option>
+              <option value="optC">Option C</option>
+              <option value="optD">Option D</option>
+            </select>
+          </div>
+          <div class="input-field-Ex">
+            <i class="fa-solid fa-info"></i>
+            <textarea id="explain" placeholder="Explanation"></textarea>
+          </div>
+          <div class="subbtn-field">
+            <button type="button" id="submit" onclick="addQuestions()">
+              SUBMIT
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="addquestion.js"></script>
+  </body>
+</html>
